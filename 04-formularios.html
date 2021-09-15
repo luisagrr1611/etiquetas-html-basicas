@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    <head charset="UTF-8">
+        <title>FORMULARIOS</title>
+    </head>
+    <body>
+        <h1>FORMULARIOS</h1>
+        <!--action means the path wich the data will be send-->
+        <!--method means to the method https used to send data.
+        GET id the default method-->
+        <form>
+            <!--what for does is to link the etiqueta to a field
+            exmple: in the first label for is used to make a reference
+            that label is related to input name-->
+            <p>
+                <label for="name">Nombre: </label>
+                <input type="text" name="name"/>
+            </p>
+            
+            <p>
+                <label for="">Correo: </label>
+                <input type="text" name="email"/>
+            </p>
+            
+            <p>
+                <label for="password">Contraseña: </label>
+                <input type="password" name="password"/>
+            </p>
+            
+            <p>
+                <label for="">Publicacion: </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <label for="">Color favorito: </label>
+                <select name="color"> 
+                    <option value="1">Rojo</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Azul</option>
+                </select>
+                <!--value will be the value that the back-ed recieves-->
+            </p>
+
+            <p>
+                <label for="">Selecciona tu rango de edad: </label>
+                <label for="">De 18 a 22</label>
+                <input type="radio" name="edad" id=""/>
+                <label for="">De 23 a 28</label>   
+                <input type="radio" name="edad" id=""/>
+                <label for="">De 29 a 34</label>
+                <input type="radio" name="edad" id=""/>
+            </p>
+
+            <!--To send data to the server 
+            but with the type submit our information will be shown in the url to avoid this we use the method post-->
+            <input type="submit" value="Guardar datos" method="post"/>
+
+            <button type="submit">Guardar datos</button>
+            <!--button is used to send data to the back end, is most used nowadays, for instance it is used for log ins-->
+
+
+
+        </form> 
+    </body>
+</html>
